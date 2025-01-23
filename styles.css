@@ -21,7 +21,7 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 0;
 }
 
 .loguito {
@@ -688,9 +688,6 @@ text-transform: capitalize;
     }
 }
 @media (max-width: 765px) {
-    body {
-    padding-top:90px;
-    }
 
     .loguito {
     max-height:38px;

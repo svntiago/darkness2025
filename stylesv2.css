@@ -1,6 +1,5 @@
 body {
     background:#111010;
-    padding-top: 6vh;
 }
 
 header {
@@ -40,6 +39,12 @@ header .overlay {
   background-color: black;
   opacity: 0.5;
   z-index: 1;
+}
+
+.header-promos {
+    background: url(assets/promos.jpg);
+    width: auto;
+    background-position: 0 -393px;
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -175,9 +180,6 @@ border-style: solid;
 
 @media screen and (max-width: 991px) {
 
-body {
-    padding-top: 7vh;
-}
     .separador {
     height: 4px;
     margin: 2vh 0;
