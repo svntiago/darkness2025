@@ -78,7 +78,7 @@
 
   <!-- VIDEO -->
   <video playsinline="playsinline" controls="true" autoplay="autoplay" muted="muted" loop="loop" id="BgVideo">
-    <source src="https://firebasestorage.googleapis.com/v0/b/estacion-darkness.appspot.com/o/intro.webm?alt=media&token=50726dc4-1540-4c03-9363-74bc55f7a3e1" type="video/webm">
+    <source src="assets/intro.mp4" type="video/mp4">
   </video>
 
   <!-- TEXTO 
@@ -155,10 +155,30 @@
     </div>
 </footer></div>
 <script src="bootstrap.bundle.min.js"></script>
+<script src="canvas-video-player.js"></script>
 <script>
-var bgvideo = document.getElementById("BgVideo");
-bgvideo.muted = true;
-bgvideo.play();
+
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (isIOS) {
+
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.video',
+        canvasSelector: '.canvas',
+        timelineSelector: false,
+        autoplay: true,
+        makeLoop: true,
+        pauseOnClick: false,
+        audio: false
+    });
+
+}else {
+
+    // Use HTML5 video
+    document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+}   
+
 </script>
 
 </body>
