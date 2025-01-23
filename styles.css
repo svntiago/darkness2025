@@ -78,17 +78,6 @@ h5 {
     font-weight: 300;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 6vh;
-    margin-top: 5vh;
-    margin-left: -2vw;
-    align-content: left;
-    align-items: center;
-    justify-content: left;
-}
-
 .logo {
     width: 80vw;
     max-width: 80vw;
