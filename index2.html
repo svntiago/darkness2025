@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylesv2.css">
     <script src="https://kit.fontawesome.com/f4e1bfb052.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bg.js" crossorigin="anonymous"></script>
     <!-- GOOGLE -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1V15R3VS0"></script>
     <script>
@@ -77,12 +78,14 @@
 <header>
 
 
-<div class="wrapper">
-   <video autoplay loop muted class="wrapper__video">
-      <source src="assets/intro.mp4">
-   </video>  
-</div>
+<video poster="assets/header.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- 
+- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="assets/intro.webm" type="video/webm">
+<source src="assets/intro.mp4" type="video/mp4">
 
+</video>
 </header>
 
 <div class="container-cartas">
