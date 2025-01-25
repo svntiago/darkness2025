@@ -211,3 +211,18 @@ border-style: solid;
 }
 
 }
+
+.fullscreen-video-container {
+  position: relative;
+  height: 100vh; 
+  width: 100vw;
+   overflow: hidden;
+}
+
+.fullscreen-video-container video {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
