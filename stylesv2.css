@@ -44,6 +44,7 @@ header .overlay {
 
 .header-promos {
     background: url(assets/promos.jpg);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
     width: auto;
     background-position: 0 -393px;
 }
@@ -225,4 +226,8 @@ border-style: solid;
   height: auto;
   min-width: 100%;
   min-height: 100%;
+}
+
+gmp-map {
+  height: 35vh;
 }

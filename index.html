@@ -75,21 +75,13 @@
         <source src="assets/intro.ogg" type="video/ogg">
         <source src="assets/intro.webm" type="video/webm">
     </video>
-
-  <!-- VIDEO 
-  <video playsinline="playsinline" controls="true" autoplay="autoplay" muted="muted" loop="loop" id="BgVideo">
-    <source src="assets/intro.mp4" type="video/mp4">
-  </video> -->
-
-  <!-- TEXTO 
-  <div class="container h-100">
+<div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">Video Header</h1>
-        <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>
+        <h1 class="display-3">Estación Darkness</h1>
+        <p class="lead mb-0">Dejá que pase el tren, estás en la estación correcta.</p>
       </div>
     </div>
-  </div>-->
 </header>
 
 <div class="container-cartas">
@@ -110,16 +102,14 @@
 <div class="container-header header-promos">
  <div class="position-relative overflow-hidden mb-2 p-3 p-md-5 text-center">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Happy Hour Extendido</h1>
-      <h3 class="fw-normal text-muted mb-3">Texto random</h3>
+      <h1 class="display-2 fw-bold">Happy Hour Extendido</h1>
+      <h3 class="fw-normal mt-2 mb-5 opacity-75">Pagando en efectivo, te extendemos el Happy Hour toda la noche.</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <a class="icon-link" href="#">
-          <button class="btn-links" style="font-size: 4.5vw;padding: 0.5vh 3vw;" id="customBtn">Mirá las promos</button>
+          <button class="btn-links" style="font-size: 4.5vw;padding: 0.5vh 4vw;" id="customBtn">Mirá las promos</button>
         </a>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
 </div>
 
@@ -143,6 +133,46 @@
 <div class="separador"></div>
 
 <a href="https://wa.link/r5hnzo" class="whatsapp" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+
+<footer class="py-3 my-4">
+
+<div class="container px-4 py-5" id="featured-2">
+
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <i class="fa-solid fa-location-dot"></i><h3 class="fs-2 text-body-emphasis ms-2">¿Dónde estamos?</h3>
+        </div>
+        
+        <p>
+			<a href="https://goo.gl/maps/R8P38DC32coJ6L977">
+            Mariano Fragueiro 1645, Córdoba.</a><br>
+			<div class="pe-4 my-2">
+			<gmp-map center="-31.396347045898438,-64.18629455566406" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="-31.396347045898438,-64.18629455566406" title="Darkness Bar" class="mx-2 mt-2"></gmp-advanced-marker>
+    </gmp-map><br>
+			</div>
+		</p>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <i class="fa-solid fa-clock"></i><h3 class="fs-2 text-body-emphasis ms-2">Horarios</h3>
+        </div>
+        <p>
+		 De Miércoles a Domingos.<br>
+		 Desde las 17hs.<br>
+		</p>
+      </div>
+</div>
+</footer>
+<div class="powered mb-5" style="border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;">
+        <a class="linkdecode" href="https://wa.me/3517881363" target="_blank"><button class="decode"></button></a>
+    </div>
+
+<!--
+
 <footer class="py-3 my-4" style="border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;">
     <p class="text-center text-body-light">
         <a href="https://goo.gl/maps/R8P38DC32coJ6L977"><i class="fa-solid fa-location-dot"></i>
@@ -155,32 +185,9 @@
         <a class="linkdecode" href="https://wa.me/3517881363" target="_blank"><button class="decode"></button></a>
     </div>
 </footer></div>
+
+-->
+
 <script src="bootstrap.bundle.min.js"></script>
-<script src="canvas-video-player.js"></script>
-<script>
-
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-
-if (isIOS) {
-
-    var canvasVideo = new CanvasVideoPlayer({
-        videoSelector: '.video',
-        canvasSelector: '.canvas',
-        timelineSelector: false,
-        autoplay: true,
-        makeLoop: true,
-        pauseOnClick: false,
-        audio: false
-    });
-
-}else {
-
-    // Use HTML5 video
-    document.querySelectorAll('.canvas')[0].style.display = 'none';
-
-}   
-
-</script>
-
 </body>
 </html>
