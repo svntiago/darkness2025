@@ -475,6 +475,8 @@ a.linkdecode:hover {
 
 .nav-link {
 text-transform: capitalize;
+font-family: 'big_noodle_titling', sans-serif;
+font-size: 2vw;
 }
 
 /*LOCRAZO*/
@@ -709,6 +711,9 @@ text-transform: capitalize;
         padding: 30px;
         transform: scale(0);
     }
+    .nav-link {
+font-size: 10vw;
+}
 }
 @media (max-width: 960px) {
         .menu-botones {
@@ -729,6 +734,7 @@ text-transform: capitalize;
         .row-cols-2>* {
             width: 100%;
         }
+
 }
 
 .img-fluida {
