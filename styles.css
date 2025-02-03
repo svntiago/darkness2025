@@ -64,11 +64,11 @@ h3 {
 }
 
 h4 {
+	font-family: 'big_noodle_titling', sans-serif;
     margin: 0 auto;
-    padding: 0 2vw;
     font-weight: 300;
     letter-spacing: 0px;
-    width: max-content;
+	font-size:1.7rem;
 }
 
 h5 {
@@ -76,6 +76,10 @@ h5 {
     padding: 0;
     font-size: 1.1rem;
     font-weight: 300;
+}
+
+.dish-meta {
+	font-size: 1.1rem;
 }
 
 .logo {

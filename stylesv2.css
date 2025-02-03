@@ -231,3 +231,36 @@ border-style: solid;
 gmp-map {
   height: 35vh;
 }
+
+.menu-title {
+    margin-bottom: 5vh;
+    padding: 2vh 2vw;
+    font-size: 9vw;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.menu-block {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 25px;
+    padding: 0vh 5vw;
+}
+
+.dish-price {
+    font-size: 2.5rem;
+    text-align: right;
+    font-family: 'big_noodle_titling';
+}
+
+@media (min-width: 960px) {
+	.menu-title {
+    margin-bottom: 5vh;
+    padding: 2vh 2vw;
+    font-size: 3vw;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+.menu-block {
+    padding: 0vh 1.5vw;
+}
+}
