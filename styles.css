@@ -1,27 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,100..700;1,100..700&display=swap');
-
 @font-face {
-    font-family: 'big_noodle_titling';
-    font-style: normal;
-    font-weight: normal;
-    src: local('big_noodle_titling'), url('fonts/big_noodle_titling.woff') format('woff');
-}
-@font-face {
-    font-family: 'big_noodle_titling_oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('big_noodle_titling_oblique'), url('fonts/big_noodle_titling_oblique.woff') format('woff');
+    font-family: 'bignoodletitling';
+    src: url('fonts/bignoodletitling.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/bignoodletitling.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/bignoodletitling.woff') format('woff'),
+    /* Modern Browsers */
+    url('fonts/bignoodletitling.ttf') format('truetype')
+    /* Safari, Android, iOS */
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
 body {
     background: #060606;
     color: white;
     font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 90px;
 }
 
 .loguito {
@@ -47,15 +45,13 @@ a {
 h1 {
     margin: 0 auto;
     padding: 0;
-    font-family: 'big_noodle_titling', sans-serif;
-    font-size: 12vw;
-    font-weight: 500;
+    font-family: 'bignoodletitling', sans-serif;
+    font-size: xxx-large;
+    font-weight: 300;
     letter-spacing: 0px;
-    text-align:center;
 }
 
 h3 {
-    font-family: 'big_noodle_titling', sans-serif;
     margin: 0 auto;
     padding: 0;
     font-size: 1.4rem;
@@ -64,22 +60,31 @@ h3 {
 }
 
 h4 {
-	font-family: 'big_noodle_titling', sans-serif;
     margin: 0 auto;
+    padding: 0 2vw;
     font-weight: 300;
     letter-spacing: 0px;
-	font-size:1.7rem;
+    width: max-content;
 }
 
 h5 {
     margin: 0 auto;
     padding: 0;
     font-size: 1.1rem;
+    font-family: monospace;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
-.dish-meta {
-	font-size: 1.1rem;
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+    margin-top: 5vh;
+    margin-left: -2vw;
+    align-content: left;
+    align-items: center;
+    justify-content: left;
 }
 
 .logo {
@@ -123,7 +128,7 @@ h5 {
 .links {
     text-align: left;
     display: block;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     font-size: 1.6em;
     letter-spacing: 1.4px;
 }
@@ -160,7 +165,7 @@ h5 {
 }
 
 .titulo-enlaces {
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     letter-spacing: 2px;
     font-size: 2.4em;
     color: rgba(255, 255, 255, 0.7);
@@ -171,7 +176,7 @@ h5 {
 
 .titulo-promos {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     padding: 3vh 4vw;
     background: #3366cc;
@@ -184,7 +189,7 @@ h5 {
 
 .precio-promos {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     padding: 15px;
     border-width: 2px;
     width: fit-content;
@@ -199,7 +204,7 @@ h5 {
 
 .cartelera-cine {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     padding: 3vh 1vw;
     background: #3366cc;
@@ -211,7 +216,7 @@ h5 {
 
 #cartelera-actual {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     width: 100%;
 }
@@ -234,7 +239,8 @@ h5 {
 }
 
 .sinopsis {
-    font-family: 'Roboto Mono', serif;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
     margin: 0 auto;
     margin-top: 2vh;
     font-size: 1.3rem;
@@ -246,7 +252,7 @@ h5 {
     margin: 0 auto;
     margin-top: 5vh;
     font-size: 2.2rem;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     background: #3366cc;
     padding: 2vh 3vw;
     width: fit-content;
@@ -255,7 +261,7 @@ h5 {
 .enviar {
     margin: 0 auto;
     font-size: 2rem;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     border: 2px solid white;
     padding: 2vh 3vw;
     color: black;
@@ -264,7 +270,7 @@ h5 {
 
 .cartelera-cine-before {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     padding: 3vh 1vw;
     color: grey;
@@ -278,7 +284,7 @@ h5 {
 
 #cartelera-pasada {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     width: 100%;
     padding: 0vh 0 3vh 0;
@@ -324,7 +330,7 @@ h5 {
 
 .tragos {
     text-align: left;
-    font-family: 'Roboto Mono', serif;
+    font-family: 'bignoodletitling', sans-serif;
     margin-top: 20px;
     padding: 3vh 4vw;
     background: #3366cc;
@@ -341,8 +347,10 @@ h5 {
 }
 
 h6 {
-    font-size: 0.9em;
-    color: lightslategray;
+    font-size: 1.2em;
+    color: white;
+	text-transform: none;
+	font-weight: 400;
 }
 
 .trabajo {
@@ -383,8 +391,8 @@ span {
 
 .separador {
     width: 100%;
-    height: 5px;
-    background: rgba(255, 255, 255, 1);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
     margin: 3vh 0 3vh 0;
 }
 
@@ -426,7 +434,16 @@ a.linkdecode:hover {
     line-height: 56px;
 }
 
-.btn-cine {
+.separador {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border: 0;
+  border-bottom: #111;
+  opacity:0.2;
+}
+
+.btn-happy {
+text-transform: uppercase;
     --bs-btn-color: #111;
     --bs-btn-bg: #F82F2F;
     --bs-btn-border-color: #EC1717;
@@ -444,6 +461,7 @@ a.linkdecode:hover {
 }
 
 .btn-promo {
+text-transform: uppercase;
     --bs-btn-color: #111;
     --bs-btn-bg: #2EB313;
     --bs-btn-border-color: #2BA712;
@@ -479,8 +497,6 @@ a.linkdecode:hover {
 
 .nav-link {
 text-transform: capitalize;
-font-family: 'big_noodle_titling', sans-serif;
-font-size: 2vw;
 }
 
 /*LOCRAZO*/
@@ -613,7 +629,7 @@ font-size: 2vw;
     }
     .titulo-promos {
         text-align: left;
-        font-family: 'Roboto Mono', serif;
+        font-family: 'bignoodletitling', sans-serif;
         margin-top: 20px;
         padding: 3% 4%;
         background: #3366cc;
@@ -625,7 +641,7 @@ font-size: 2vw;
     }
     .precio-promos {
         text-align: left;
-        font-family: 'Roboto Mono', serif;
+        font-family: 'bignoodletitling', sans-serif;
         padding: 15px;
         border-width: 2px;
         width: fit-content;
@@ -654,7 +670,7 @@ font-size: 2vw;
     h3 {
         margin: 0 auto;
         padding: 0;
-        font-size: 3rem;
+        font-size: 1.8rem;
         font-weight: 300;
         letter-spacing: 0px;
     }
@@ -683,6 +699,9 @@ font-size: 2vw;
     }
 }
 @media (max-width: 765px) {
+    body {
+    padding-top:90px;
+    }
 
     .loguito {
     max-height:38px;
@@ -699,9 +718,9 @@ font-size: 2vw;
         padding: 1.5%;
     }
     h1 {
-        font-size: 15vw;
-        letter-spacing: 0.1px;
-        margin-bottom: 5px;
+        font-size: xxx-large;
+        font-weight: 300;
+        letter-spacing: 0px;
     }
     .py-5 {
         padding-top: 0rem !important;
@@ -715,9 +734,6 @@ font-size: 2vw;
         padding: 30px;
         transform: scale(0);
     }
-    .nav-link {
-font-size: 10vw;
-}
 }
 @media (max-width: 960px) {
         .menu-botones {
@@ -738,10 +754,4 @@ font-size: 10vw;
         .row-cols-2>* {
             width: 100%;
         }
-
-}
-
-.img-fluida {
-    max-width: 30%;
-    height: auto;
 }
