@@ -44,7 +44,6 @@ header .overlay {
 
 .header-promos {
     background: url(assets/promos.jpg);
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
     width: auto;
     background-position: 0 -393px;
 }
@@ -102,29 +101,6 @@ border-width: 0px;
 border-style: solid;
 }
 
-.btn-sub {
-   border: 0px;
-    font-family: 'big_noodle_titling', sans-serif;
-	font-size: 3.5vw;
-    color: #eee;
-    padding: 0.5% 6%;
-    transition: 600ms;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 50px;
-	border: 3px solid #eee;
-    background: transparent;
-    --hover-borderSize: 0px;
-    --hover-bgc: #198ae6;
-    --hover-color: #fff;
-    margin: 0 1vw;
-}
-
-.btn-sub:hover{
-color: #fff;
-background: rgba(255,255,255,0.1) none repeat scroll 0% 0% / auto padding-box border-box;
-border: 3px solid #fff;
-}
-
 .btn-links {
     border: 0px;
     font-family: 'big_noodle_titling', sans-serif;
@@ -166,15 +142,6 @@ border: 3px solid #fff;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-}
-
-.container-botones-cartas {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-	margin: 0 5vw;
 }
 
 .container-botonesl {
@@ -232,11 +199,7 @@ border: 3px solid #fff;
 }
 
 .btn {
-	font-size: 6vw;
-}
-
-.btn-sub {
-	font-size: 6vw;
+   font-size: 5vw;
 }
 
 .btn-links {
@@ -249,112 +212,17 @@ border: 3px solid #fff;
 
 }
 
-.fullscreen-video-container {
-  position: relative;
-  height: 100vh; 
-  width: 100vw;
-   overflow: hidden;
-}
-
-.fullscreen-video-container video {
-  position: absolute;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-gmp-map {
-  height: 35vh;
-}
-
-.menu-title {
-    margin-bottom: 5vh;
-    padding: 2vh 2vw;
-    font-size: 9vw;
-    border-bottom: 3px solid grey;
+h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    margin: 40px 0 0;
     text-align: center;
 }
-
-.menu-block {
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 25px;
-    padding: 0vh 5vw;
-}
-
-.dish-price {
-    font-size: 2.5rem;
-    text-align: right;
-    font-family: 'big_noodle_titling';
-}
-
-
-.menu-block {
-    padding: 0vh 1.5vw;
-}
-}
-
-.menu-block { margin-bottom: 30px; }
-.menu-title { border-bottom: 3px solid #e0e6e3; margin-bottom: 36px; padding-bottom: 10px; }
-.menu-content { border-bottom: 1px solid grey; margin-bottom: 30px; }
-.dish-img { }
-.dish-content { margin-top: 0px; margin-bottom: 14px; }
-.dish-meta { font-size: 14px; text-transform: uppercase; display: block; width: 90%; line-height: 1.7; color:#ddd; }
-.dish-title { margin-bottom: 6px; font-size: 26px; text-transform: uppercase; font-weight: 500; position: relative; }
-.dish-price { font-family: 'big_noodle_titling', sans-serif; position: absolute; right: 16px; top: 0px; color: #fff; font-weight: 500; }
-.well-block .dish-meta { width: 100%; }
-.dish-price { font-size: 26px; color: #fff; font-weight: 500; position: inherit; font-size: 34px; }
-p { margin: 0 0 24px; line-height: 1.6; }
-p:last-child { margin: 0px; }
-ul, ol { list-style: none; margin: 0; padding: 0; }
-
-@media (min-width: 960px) {
-	.menu-title {
-    margin-bottom: 5vh;
-    padding: 2vh 2vw;
-    font-size: 3vw;
-    border-bottom: 3px solid grey;
-    text-align: center;
-}
-}
-
-
-@media only screen and (max-width: 992px) and (min-width: 576px) {
-	.menu-title {
-    margin-bottom: 5vh;
-    padding: 2vh 2vw;
-    font-size: 4vw;
-    border-bottom: 3px solid grey;
-    text-align: center;
-}
-.col-md-9 {
-        width: 95%;
-        margin: 1vh 1vw;
-    }
-.dish-meta {
-    font-size: 12px;
-    text-transform: uppercase;
+.video-background {
+    background-size: contain;
+    background-image: url('assets/intro.mp4');
     display: block;
-    width: 100%;
-    line-height: 1.5;
-    color: #ddd;
-}
-}
-
-@media (min-width: 992px) {
-    .col-lg-9 {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-
-.dish-content {
-    margin-top: 0px;
-    margin-bottom: 14px;
-    margin: 0px 4vw 2vh 4vw;
-}
-i.fas.fa-pizza-slice.icono-carta {
-    font-size: 3.8vw;
-}
+    height: 266px;
+    margin: 40px auto;
+    width: 480px;
 }
