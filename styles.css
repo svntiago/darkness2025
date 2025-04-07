@@ -48,7 +48,6 @@ h1 {
     font-family: 'bignoodletitling', sans-serif;
     font-size: xxx-large;
     font-weight: 300;
-    letter-spacing: 0px;
 }
 
 h3 {
@@ -56,24 +55,19 @@ h3 {
     padding: 0;
     font-size: 1.4rem;
     font-weight: 300;
-    letter-spacing: 0px;
 }
 
 h4 {
     margin: 0 auto;
     padding: 0 2vw;
     font-weight: 300;
-    letter-spacing: 0px;
     width: max-content;
 }
 
 h5 {
-    margin: 0 auto;
-    padding: 0;
-    font-size: 1.1rem;
-    font-family: monospace;
-    font-weight: 300;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 header {
